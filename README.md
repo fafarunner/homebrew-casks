@@ -11,14 +11,16 @@
 
 ## Install
 
-`brew install fafarunner/casks/fafarunner`
+> Starting with Homebrew 6.0.0, you must trust non-official taps to install them. See [Tap Trust](https://docs.brew.sh/Tap-Trust).
 
-Or `brew tap fafarunner/casks` and then `brew install fafarunner`.
+Run `brew trust --cask fafarunner/casks/fafarunner` and `brew install --cask fafarunner/casks/fafarunner`
+
+Or run `brew tap fafarunner/casks`, `brew trust fafarunner/casks` and `brew install fafarunner`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "fafarunner/casks"
+tap "fafarunner/casks", trusted: true
 brew "fafarunner"
 ```
 
